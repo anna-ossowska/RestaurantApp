@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Data\RestaurantApp.Data.csproj" />
+    <ProjectReference Include="..\RestaurantApp.Core\RestaurantApp.Core.csproj" />
+  </ItemGroup>
+
 </Project>

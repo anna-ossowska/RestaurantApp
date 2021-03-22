@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
+using RestaurantApp.Data;
 
 namespace RestaurantApp.Pages.Restaurants
 {
@@ -14,9 +15,12 @@ namespace RestaurantApp.Pages.Restaurants
 
         private readonly IConfiguration Config;
 
-        public ListModel(IConfiguration config)
+        private readonly IRestaurantData restaurantData;
+
+        public ListModel(IConfiguration config, IRestaurantData restaurantData)
         {
             this.Config = config;
+            this.restaurantData = restaurantData;
         }
 
         public void OnGet()

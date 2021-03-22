@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "RestaurantApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RestaurantApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantApp.Core.dll": {}
+        }
+      },
+      "RestaurantApp.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RestaurantApp.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestaurantApp.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantApp.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestaurantApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantApp.Core/RestaurantApp.Core.csproj",
+      "msbuildProject": "../RestaurantApp.Core/RestaurantApp.Core.csproj"
+    },
+    "RestaurantApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../Restaurant.Data/RestaurantApp.Data.csproj",
+      "msbuildProject": "../Restaurant.Data/RestaurantApp.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "RestaurantApp.Core >= 1.0.0",
+      "RestaurantApp.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\tomas\\.nuget\\packages\\": {},
@@ -37,7 +75,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tomas\\Documents\\anna\\repos\\RestaurantApp\\RestaurantApp\\Restaurant.Data\\RestaurantApp.Data.csproj": {
+              "projectPath": "C:\\Users\\tomas\\Documents\\anna\\repos\\RestaurantApp\\RestaurantApp\\Restaurant.Data\\RestaurantApp.Data.csproj"
+            },
+            "C:\\Users\\tomas\\Documents\\anna\\repos\\RestaurantApp\\RestaurantApp\\RestaurantApp.Core\\RestaurantApp.Core.csproj": {
+              "projectPath": "C:\\Users\\tomas\\Documents\\anna\\repos\\RestaurantApp\\RestaurantApp\\RestaurantApp.Core\\RestaurantApp.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

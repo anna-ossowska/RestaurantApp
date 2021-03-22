@@ -36,3 +36,7 @@ C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\ob
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\RestaurantApp.genruntimeconfig.cache
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\RestaurantApp.csproj.CopyComplete
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\List.cshtml.g.cs
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\bin\Debug\netcoreapp3.1\RestaurantApp.Core.dll
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\bin\Debug\netcoreapp3.1\RestaurantApp.Data.dll
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\bin\Debug\netcoreapp3.1\RestaurantApp.Data.pdb
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\bin\Debug\netcoreapp3.1\RestaurantApp.Core.pdb
