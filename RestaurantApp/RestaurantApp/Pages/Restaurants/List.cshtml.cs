@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
+using RestaurantApp.Core;
 using RestaurantApp.Data;
 
 namespace RestaurantApp.Pages.Restaurants
@@ -12,6 +13,7 @@ namespace RestaurantApp.Pages.Restaurants
     public class ListModel : PageModel
     {
         public string Message{ get; set; }
+        public IEnumerable<Restaurant> Restaurants { get; set; }
 
         private readonly IConfiguration Config;
 
@@ -26,6 +28,7 @@ namespace RestaurantApp.Pages.Restaurants
         public void OnGet()
         {
             Message = Config["Message"];
+            Restaurants = restaurantData.GetRestaurants();
         }
     }
 }
