@@ -8,7 +8,7 @@ namespace RestaurantApp.Data
 {
     public interface IRestaurantData
     {
-        IEnumerable<Restaurant> GetRestaurants();
+        IEnumerable<Restaurant> GetRestaurantsByName(string name);
     }
 
     public class HardcodedRestaurantData : IRestaurantData
@@ -27,9 +27,10 @@ namespace RestaurantApp.Data
             
         }
 
-        public IEnumerable<Restaurant> GetRestaurants()
+        public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             return from r in restaurants
+                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
         }

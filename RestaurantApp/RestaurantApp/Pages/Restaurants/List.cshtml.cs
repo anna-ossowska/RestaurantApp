@@ -25,10 +25,10 @@ namespace RestaurantApp.Pages.Restaurants
             this.restaurantData = restaurantData;
         }
 
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
             Message = Config["Message"];
-            Restaurants = restaurantData.GetRestaurants();
+            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
         }
     }
 }
