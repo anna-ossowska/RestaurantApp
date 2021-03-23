@@ -1,0 +1,12 @@
+﻿@page
+@model RestaurantApp.Pages.Restaurants.DetailModel
+@{
+}
+
+<h2>Details about @Model.Restaurant.Name</h2>
+
+<div>Id: @Model.Restaurant.Id;</div>
+<div>Location: @Model.Restaurant.Location;</div>
+<div>Cuisine: @Model.Restaurant.Cuisine;</div>
+<br />
+<a asp-page="./List" class="btn btn-outline-info">Go Back to Restaurants</a>
