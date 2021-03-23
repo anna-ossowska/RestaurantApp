@@ -3,10 +3,10 @@
 @{
 }
 
-<h2>Details about @Model.Restaurant.Name</h2>
-
-<div>Id: @Model.Restaurant.Id;</div>
-<div>Location: @Model.Restaurant.Location;</div>
-<div>Cuisine: @Model.Restaurant.Cuisine;</div>
+<h2>Details about <span class="text-info">@Model.Restaurant.Name</span></h2>
+<br />
+<div><strong>Id:&nbsp;</strong> @Model.Restaurant.Id</div>
+<div><strong>Location:&nbsp;</strong> @Model.Restaurant.Location</div>
+<div><strong>Cuisine:&nbsp;</strong> @Model.Restaurant.Cuisine</div>
 <br />
 <a asp-page="./List" class="btn btn-outline-info">Go Back to Restaurants</a>
