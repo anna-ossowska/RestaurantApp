@@ -15,6 +15,9 @@ namespace RestaurantApp.Pages.Restaurants
         public string Message{ get; set; }
         public IEnumerable<Restaurant> Restaurants { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
         private readonly IConfiguration Config;
 
         private readonly IRestaurantData restaurantData;
@@ -28,7 +31,7 @@ namespace RestaurantApp.Pages.Restaurants
         public void OnGet(string searchTerm)
         {
             Message = Config["Message"];
-            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
+            Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
         }
     }
 }
