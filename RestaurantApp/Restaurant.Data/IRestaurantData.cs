@@ -9,6 +9,8 @@ namespace RestaurantApp.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+
+        Restaurant GetById(int id);
     }
 
     public class HardcodedRestaurantData : IRestaurantData
@@ -25,6 +27,11 @@ namespace RestaurantApp.Data
                 new Restaurant { Id = 4, Name = "El Pirata Porch", Location = "Sola", Cuisine = CuisineType.None }
             };
             
+        }
+
+        public Restaurant GetById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
         }
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
