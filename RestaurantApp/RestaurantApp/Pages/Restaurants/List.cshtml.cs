@@ -28,7 +28,7 @@ namespace RestaurantApp.Pages.Restaurants
             this.restaurantData = restaurantData;
         }
 
-        public void OnGet(string searchTerm)
+        public void OnGet()
         {
             Message = Config["Message"];
             Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
