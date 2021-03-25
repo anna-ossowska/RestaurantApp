@@ -4,9 +4,17 @@
 }
 
 <h2>Details about <span class="text-info">@Model.Restaurant.Name</span></h2>
+
+@if (TempData["Message"] != null)
+{
+    <br />
+    <div class="alert alert-info">@Model.Message</div>
+}
+
 <br />
 <div><strong>Id:&nbsp;</strong> @Model.Restaurant.Id</div>
 <div><strong>Location:&nbsp;</strong> @Model.Restaurant.Location</div>
 <div><strong>Cuisine:&nbsp;</strong> @Model.Restaurant.Cuisine</div>
 <br />
+
 <a asp-page="./List" class="btn btn-outline-info">Go Back to Restaurants</a>

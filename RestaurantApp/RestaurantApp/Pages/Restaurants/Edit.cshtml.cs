@@ -48,15 +48,26 @@ namespace RestaurantApp.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+            {
+                Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+                return Page();
+            }
+            
+            if (Restaurant.Id > 0)
             {
                 restaurantData.Update(Restaurant);
-                restaurantData.Commit();
-                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
+                TempData["Message"] = "Restaurant updated.";
             }
+            else
+            {
+                restaurantData.Create(Restaurant);
+                TempData["Message"] = "Restaurant saved.";
+            }
+            restaurantData.Commit();
+          
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
 
-            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            return Page();
         }
     }
 }
