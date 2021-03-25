@@ -17,7 +17,7 @@
 </form>
 <br />
 <br />
-<table class="table">
+<table class="table" >
     <tr>
         <th>Name</th>
         <th>Location</th>
@@ -25,20 +25,19 @@
     </tr>
     @foreach (var restaurant in Model.Restaurants)
     {
-<tr>
-    <td>@restaurant.Name</td>
-    <td>@restaurant.Location</td>
-    <td>@restaurant.Cuisine</td>
-    <td>
-        <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-info-circle text-info"></i></a>
-    </td>
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+                <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-info-circle text-info"></i></a>
+            </td>
 
-    <td>
-        <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-edit text-info"></i></a>
-    </td>
-</tr>
+            <td>
+                <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-edit text-info"></i></a>
+            </td>
+        </tr>
     }
 </table>
 <br />
 <div>@Model.Message</div>
-

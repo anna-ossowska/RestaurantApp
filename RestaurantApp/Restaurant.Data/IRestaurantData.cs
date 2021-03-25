@@ -11,6 +11,10 @@ namespace RestaurantApp.Data
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
 
         Restaurant GetById(int id);
+
+        Restaurant Update(Restaurant updatedRestaurant);
+
+        int Commit();
     }
 
     public class HardcodedRestaurantData : IRestaurantData
@@ -29,17 +33,36 @@ namespace RestaurantApp.Data
             
         }
 
-        public Restaurant GetById(int id)
-        {
-            return restaurants.SingleOrDefault(r => r.Id == id);
-        }
-
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             return from r in restaurants
                    where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
+        }
+
+        public Restaurant GetById(int id)
+        {
+            return restaurants.SingleOrDefault(r => r.Id == id);
+        }
+
+        public Restaurant Update(Restaurant updatedRestaurant)
+        {
+            var resturant = restaurants.SingleOrDefault(r => r.Id == updatedRestaurant.Id);
+
+            if (resturant != null)
+            {
+                resturant.Name = updatedRestaurant.Name;
+                resturant.Location = updatedRestaurant.Location;
+                resturant.Cuisine = updatedRestaurant.Cuisine;             
+            }
+
+            return resturant;
+        }
+
+        public int Commit()
+        {
+            return 0;
         }
     }
 }
