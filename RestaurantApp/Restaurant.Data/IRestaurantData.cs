@@ -15,6 +15,8 @@ namespace RestaurantApp.Data
         Restaurant Update(Restaurant updatedRestaurant);
 
         int Commit();
+
+        Restaurant Create(Restaurant newRestaurant);
     }
 
     public class HardcodedRestaurantData : IRestaurantData
@@ -63,6 +65,13 @@ namespace RestaurantApp.Data
         public int Commit()
         {
             return 0;
+        }
+
+        public Restaurant Create(Restaurant newRestaurant)
+        {
+            restaurants.Add(newRestaurant);
+            newRestaurant.Id = restaurants.Max(r => r.Id) + 1;
+            return newRestaurant;
         }
     }
 }
