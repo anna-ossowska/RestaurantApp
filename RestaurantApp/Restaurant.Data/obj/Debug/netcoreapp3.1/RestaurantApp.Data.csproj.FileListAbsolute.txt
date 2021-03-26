@@ -10,3 +10,6 @@ C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\RestaurantApp.Data.csproj.CopyComplete
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\RestaurantApp.Data.dll
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\RestaurantApp.Data.pdb
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\RestaurantApp.Data.runtimeconfig.json
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\RestaurantApp.Data.runtimeconfig.dev.json
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\RestaurantApp.Data.genruntimeconfig.cache

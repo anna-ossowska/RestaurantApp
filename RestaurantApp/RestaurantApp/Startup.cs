@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RestaurantApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace RestaurantApp
 {
@@ -24,6 +25,9 @@ namespace RestaurantApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // AddDbContextPool enables pooling of DbContext instances
+            services.AddDbContextPool<RestaurantAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RestaurantAppDb")));
+            
             services.AddSingleton<IRestaurantData, HardcodedRestaurantData>();
 
             services.AddRazorPages();
