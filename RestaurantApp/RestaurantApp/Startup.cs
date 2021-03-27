@@ -28,7 +28,7 @@ namespace RestaurantApp
             // AddDbContextPool enables pooling of DbContext instances
             services.AddDbContextPool<RestaurantAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RestaurantAppDb")));
             
-            services.AddSingleton<IRestaurantData, HardcodedRestaurantData>();
+            services.AddScoped<IRestaurantData, SqlRestaurantData>();
 
             services.AddRazorPages();
         }
