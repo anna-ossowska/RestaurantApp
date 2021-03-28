@@ -17,5 +17,7 @@ namespace RestaurantApp.Data
         Restaurant Create(Restaurant newRestaurant);
 
         Restaurant Delete(int id);
+
+        int GetCountOfRestaurants();
     }
 }

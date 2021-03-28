@@ -1,6 +1,7 @@
 ﻿@page "{restaurantId:int}"
 @model RestaurantApp.Pages.Restaurants.DetailModel
 @{
+    ViewData["Title"] = "Details";
 }
 
 <h2>Details about <span class="text-info">@Model.Restaurant.Name</span></h2>
