@@ -25,22 +25,29 @@
     </tr>
     @foreach (var restaurant in Model.Restaurants)
     {
-        <tr>
-            <td>@restaurant.Name</td>
-            <td>@restaurant.Location</td>
-            <td>@restaurant.Cuisine</td>
-            <td>
-                <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-info-circle text-info"></i></a>
-            </td>
+<tr>
+    <td>@restaurant.Name</td>
+    <td>@restaurant.Location</td>
+    <td>@restaurant.Cuisine</td>
+    <td>
+        <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-info-circle text-info"></i></a>
+    </td>
 
-            <td>
-                <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-edit text-info"></i></a>
-            </td>
-        </tr>
+    <td>
+        <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-edit text-info"></i></a>
+    </td>
+
+    <td>
+        <a asp-page="./Delete" asp-route-restaurantId="@restaurant.Id"><i class="fas fa-trash-alt text-info"></i></a>
+    </td>
+</tr>
     }
 </table>
 <br />
 <a asp-page="./Edit" class="btn btn-info">Add New Restaurant</a>
 <br />
 <br />
-<div>@Model.Message</div>
+
+@section footer {
+    <div>@Model.Message</div>
+}
