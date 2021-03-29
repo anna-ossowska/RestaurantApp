@@ -50,7 +50,6 @@ namespace RestaurantApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
 
             
