@@ -88,3 +88,4 @@ C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\bi
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\Delete.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\_Summary.cshtml.g.cs
 C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\Components\RestaurantCount\Default.cshtml.g.cs
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\RestaurantApp\obj\Debug\netcoreapp3.1\Razor\Pages\Restaurants\ClientRestaurants.cshtml.g.cs
