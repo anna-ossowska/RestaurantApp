@@ -50,22 +50,14 @@ namespace RestaurantApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseRouting();
 
-            
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
-
-            // aspnetcore30
             app.UseRouting();
             app.UseEndpoints(e =>
             {
                 e.MapRazorPages();
                 e.MapControllers();
             });
+
         }
     }
 }
