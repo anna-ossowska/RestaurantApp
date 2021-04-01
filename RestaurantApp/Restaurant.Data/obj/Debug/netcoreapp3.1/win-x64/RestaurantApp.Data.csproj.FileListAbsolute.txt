@@ -1,0 +1,15 @@
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.deps.json
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.runtimeconfig.json
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.runtimeconfig.dev.json
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.dll
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.pdb
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Core.dll
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\bin\Debug\netcoreapp3.1\win-x64\RestaurantApp.Core.pdb
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.csprojAssemblyReference.cache
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.AssemblyInfoInputs.cache
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.AssemblyInfo.cs
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.csproj.CopyComplete
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.dll
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.pdb
+C:\Users\tomas\Documents\anna\repos\RestaurantApp\RestaurantApp\Restaurant.Data\obj\Debug\netcoreapp3.1\win-x64\RestaurantApp.Data.genruntimeconfig.cache
